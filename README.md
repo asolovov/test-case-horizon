@@ -38,17 +38,17 @@ user's current balance and stores it in the MongoDB database for future referenc
 
 ```json
 {
-  "_id": mangoDBId,
-  "wallet": address str,
-  "current_balance": last updated user balance float,
-  "current_balance_usd": last updated user balance in USD float,
-  "last_update": datetime,
+  "_id": "mangoDBId",
+  "wallet": "address str",
+  "current_balance": "last updated user balance float",
+  "current_balance_usd": "last updated user balance in USDT float",
+  "last_update": "datetime",
   "history": [
     {
-      "date": datetime,
-      "token_balance": float,
-      "usdt_balance": float
-    }, ...
+      "date": "datetime",
+      "token_balance": "float",
+      "usdt_balance": "float"
+    },
   ]
 }
 ```
@@ -71,10 +71,10 @@ the user's balance changes over time.
 {
   "history": [
     {
-      "date": datetime,
-      "token_balance": float,
-      "usdt_balance": float
-    }, ...
+      "date": "datetime",
+      "token_balance": "float",
+      "usdt_balance": "float"
+    }
   ]
 }
 ```
