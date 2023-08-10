@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: horison-case-1
+    command: python ./src/main.py
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
