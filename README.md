@@ -31,7 +31,7 @@ user's current balance and stores it in the MongoDB database for future referenc
 #### Response
 
 ```json
-{"balance_token": float,"balance_usdt": float}
+{"balance_token": "float","balance_usdt": "float"}
 ```
 
 #### DB Object
@@ -48,7 +48,7 @@ user's current balance and stores it in the MongoDB database for future referenc
       "date": "datetime",
       "token_balance": "float",
       "usdt_balance": "float"
-    },
+    }
   ]
 }
 ```
